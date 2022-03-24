@@ -62,10 +62,13 @@ namespace WeatherAlmanac.UI
                         DeleteRecord();
                         break;
                     case 6:
-                        AutoAddRecords(Directory.GetCurrentDirectory() + @"\Data\DateRecord.csv");
+                        AutoAddRecords();
                         break;
                     case 7:
                         running = false;
+                        break;
+                    default:
+                        _ui.Display("Invalid input. Please enter a number 1 - 7");
                         break;
                 }
             }
@@ -128,8 +131,9 @@ namespace WeatherAlmanac.UI
             _ui.Display(service.Message);
         }
         
-        public void AutoAddRecords(string path)
+        public void AutoAddRecords()
         {
+            string path = Directory.GetCurrentDirectory() + @"\Data\DateRecord.csv";
             var service = Service.AutoAddRecords(path);
             _ui.Display(service.Message);
         }
@@ -180,7 +184,7 @@ namespace WeatherAlmanac.UI
             var service = Service.Edit(recordToEdit);
             _ui.Display(service.Message);
 
-            _ui.Display("\nEdited Data: ");
+            _ui.Display("\nEdited Data\n===========");
             _ui.Display(service.Data.ToString());
         }
 
