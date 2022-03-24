@@ -85,6 +85,9 @@ namespace WeatherAlmanac.UI
 
         public void DisplayMenu()
         {
+            _ui.Display("Press any key to continue");
+            Console.ReadKey();
+            Console.Clear();
             _ui.Display("Main Menu");
             _ui.Display("=========");
             _ui.Display("1. Load a record");
@@ -94,6 +97,7 @@ namespace WeatherAlmanac.UI
             _ui.Display("5. Delete Record");
             _ui.Display("6. Auto Add Records");
             _ui.Display("7. Quit");
+            _ui.Display("Please enter a selection 1 - 7");
         }
 
         public void LoadRecord()
@@ -126,36 +130,8 @@ namespace WeatherAlmanac.UI
         
         public void AutoAddRecords(string path)
         {
-            if (File.Exists(path))
-            {
-                using (StreamReader sr = new StreamReader(path))
-                {
-                    string currentLine = sr.ReadLine(); 
-                    currentLine = sr.ReadLine(); 
-                    int lineCount = 0;
-
-                    while (currentLine != null)
-                    {
-                        lineCount++;
-                        DateRecord record = new DateRecord();
-                        string[] columns = currentLine.Split(",");
-
-                        record.Date = DateTime.Parse(columns[0]);
-                        record.HighTemp = decimal.Parse(columns[1]);
-                        record.LowTemp = decimal.Parse(columns[2]);
-                        record.Humidity = decimal.Parse(columns[3]);
-                        record.Description = columns[4];
-
-                        var service = Service.Add(record);
-                        currentLine = sr.ReadLine();
-                    }
-                    _ui.Display($"{lineCount} records added.");
-                }
-            }
-            else
-            {
-                Console.WriteLine($"File at {path} not found.");
-            }
+            var service = Service.AutoAddRecords(path);
+            _ui.Display(service.Message);
         }
 
         public void AddRecord()

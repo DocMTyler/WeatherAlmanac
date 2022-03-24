@@ -20,6 +20,7 @@ namespace WeatherAlmanac.Core.Interfaces
         Result<DateRecord> Add(DateRecord record);                        //Adds a record to storage
         Result<DateRecord> Remove(DateTime date);                         //Removes record for date
         Result<DateRecord> Edit(DateRecord record);                       //Replaces a record with the same date
+        Result<List<DateRecord>> AutoAddRecords(string path);                  //Automatically adds records from a file
     }
     #endregion
 }
