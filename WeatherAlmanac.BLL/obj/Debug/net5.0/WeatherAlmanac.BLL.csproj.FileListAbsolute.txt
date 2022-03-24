@@ -1,0 +1,17 @@
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.BLL\bin\Debug\net5.0\WeatherAlmanac.BLL.deps.json
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.BLL\bin\Debug\net5.0\WeatherAlmanac.BLL.dll
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.BLL\bin\Debug\net5.0\ref\WeatherAlmanac.BLL.dll
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.BLL\bin\Debug\net5.0\WeatherAlmanac.BLL.pdb
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.BLL\bin\Debug\net5.0\WeatherAlmanac.Core.dll
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.BLL\bin\Debug\net5.0\WeatherAlmanac.DAL.dll
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.BLL\bin\Debug\net5.0\WeatherAlmanac.Core.pdb
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.BLL\bin\Debug\net5.0\WeatherAlmanac.DAL.pdb
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.BLL\obj\Debug\net5.0\WeatherAlmanac.BLL.csproj.AssemblyReference.cache
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.BLL\obj\Debug\net5.0\WeatherAlmanac.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.BLL\obj\Debug\net5.0\WeatherAlmanac.BLL.AssemblyInfoInputs.cache
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.BLL\obj\Debug\net5.0\WeatherAlmanac.BLL.AssemblyInfo.cs
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.BLL\obj\Debug\net5.0\WeatherAlmanac.BLL.csproj.CoreCompileInputs.cache
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.BLL\obj\Debug\net5.0\WeatherAlmanac.BLL.csproj.CopyComplete
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.BLL\obj\Debug\net5.0\WeatherAlmanac.BLL.dll
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.BLL\obj\Debug\net5.0\ref\WeatherAlmanac.BLL.dll
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.BLL\obj\Debug\net5.0\WeatherAlmanac.BLL.pdb

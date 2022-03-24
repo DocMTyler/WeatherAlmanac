@@ -1,0 +1,12 @@
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.Core\bin\Debug\net5.0\WeatherAlmanac.Core.deps.json
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.Core\bin\Debug\net5.0\WeatherAlmanac.Core.dll
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.Core\bin\Debug\net5.0\ref\WeatherAlmanac.Core.dll
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.Core\bin\Debug\net5.0\WeatherAlmanac.Core.pdb
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.Core\obj\Debug\net5.0\WeatherAlmanac.Core.csproj.AssemblyReference.cache
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.Core\obj\Debug\net5.0\WeatherAlmanac.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.Core\obj\Debug\net5.0\WeatherAlmanac.Core.AssemblyInfoInputs.cache
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.Core\obj\Debug\net5.0\WeatherAlmanac.Core.AssemblyInfo.cs
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.Core\obj\Debug\net5.0\WeatherAlmanac.Core.csproj.CoreCompileInputs.cache
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.Core\obj\Debug\net5.0\WeatherAlmanac.Core.dll
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.Core\obj\Debug\net5.0\ref\WeatherAlmanac.Core.dll
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.Core\obj\Debug\net5.0\WeatherAlmanac.Core.pdb
