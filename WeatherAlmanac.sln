@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31402.337
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherAlmanac.UI", "WeatherAlmanac.UI\WeatherAlmanac.UI.csproj", "{327F603A-9AEE-48AD-B13D-839455794E42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherAlmanac.UI", "WeatherAlmanac.UI\WeatherAlmanac.UI.csproj", "{327F603A-9AEE-48AD-B13D-839455794E42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherAlmanac.Core", "WeatherAlmanac.Core\WeatherAlmanac.Core.csproj", "{CCED20FB-7257-4724-A04A-A5ACBA068D9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherAlmanac.Core", "WeatherAlmanac.Core\WeatherAlmanac.Core.csproj", "{CCED20FB-7257-4724-A04A-A5ACBA068D9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherAlmanac.BLL", "WeatherAlmanac.BLL\WeatherAlmanac.BLL.csproj", "{6EF4BFC4-14A3-4500-8E63-8CA9FF0D82A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherAlmanac.BLL", "WeatherAlmanac.BLL\WeatherAlmanac.BLL.csproj", "{6EF4BFC4-14A3-4500-8E63-8CA9FF0D82A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherAlmanac.DAL", "WeatherAlmanac.DAL\WeatherAlmanac.DAL.csproj", "{B0A5DF53-6B95-49AA-AE11-57ED1528D3DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherAlmanac.DAL", "WeatherAlmanac.DAL\WeatherAlmanac.DAL.csproj", "{B0A5DF53-6B95-49AA-AE11-57ED1528D3DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherAlmanac.Tests.DAL", "WeatherAlmanac.Tests.DAL\WeatherAlmanac.Tests.DAL.csproj", "{2941A40F-6415-4456-8257-3BEADA389BFB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{B0A5DF53-6B95-49AA-AE11-57ED1528D3DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0A5DF53-6B95-49AA-AE11-57ED1528D3DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0A5DF53-6B95-49AA-AE11-57ED1528D3DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2941A40F-6415-4456-8257-3BEADA389BFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2941A40F-6415-4456-8257-3BEADA389BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2941A40F-6415-4456-8257-3BEADA389BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2941A40F-6415-4456-8257-3BEADA389BFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

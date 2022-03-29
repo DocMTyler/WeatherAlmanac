@@ -22,5 +22,11 @@ namespace WeatherAlmanac.Core.Interfaces
         Result<DateRecord> Edit(DateRecord record);                       //Replaces a record with the same date
         Result<List<DateRecord>> AutoAddRecords(string path);                  //Automatically adds records from a file
     }
+    
+    public interface ILogger
+    {
+        void Log(string message);
+    }
+    
     #endregion
 }

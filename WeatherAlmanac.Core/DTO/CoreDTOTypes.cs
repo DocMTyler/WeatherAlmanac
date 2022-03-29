@@ -40,5 +40,13 @@ namespace WeatherAlmanac.Core.DTO
         LIVE,
         TEST
     }
+
+    public enum LoggingMode
+    {
+        None = 1, 
+        File,
+        Console
+    }
+
     #endregion
 }

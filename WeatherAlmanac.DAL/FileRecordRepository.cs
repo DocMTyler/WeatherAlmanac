@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using WeatherAlmanac.Core.Interfaces;
 using WeatherAlmanac.Core.DTO;
+using WeatherAlmanac.Core.Exceptions;
 
 namespace WeatherAlmanac.DAL
 {
-    public class FileRecordRepository : IRecordRepository
+    public class FileRecordRepository : IRecordRepository, ILogger
     {
         private List<DateRecord> _records;
 
@@ -87,6 +88,19 @@ namespace WeatherAlmanac.DAL
             result.Data = record;
 
             return result;
+        }
+
+        public void Log(string message)
+        {
+            try
+            {
+                
+            }
+            catch(Exception e)
+            {
+                Log(message);
+                Console.WriteLine(e.Message);
+            }
         }
     }
 }
