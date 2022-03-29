@@ -36,9 +36,9 @@ namespace WeatherAlmanac.Core.DTO
 
         public void Log(string message)
         {
-            using (StreamWriter sw = new StreamWriter(message, true))
+            using (StreamWriter writer = new StreamWriter(_filePath, true))
             {
-                sw.WriteLine($"{timeStamp}, {message}");
+                writer.WriteLine($"{timeStamp}, {message}");
             }
         }
     }
