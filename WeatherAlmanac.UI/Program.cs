@@ -2,6 +2,7 @@
 using WeatherAlmanac.Core.DTO;
 using WeatherAlmanac.BLL;
 using WeatherAlmanac.Core.Interfaces;
+using Ninject;
 
 namespace WeatherAlmanac.UI
 {
@@ -9,6 +10,7 @@ namespace WeatherAlmanac.UI
     {
         static void Main(string[] args)
         {
+            //var controller = NinjectContainer.Kernel.Get<MenuController>();
             ConsoleIO ui = new ConsoleIO();
             MenuController menu = new MenuController(ui);
             ApplicationMode mode = menu.Setup();

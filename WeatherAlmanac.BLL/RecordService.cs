@@ -3,6 +3,7 @@ using WeatherAlmanac.Core.DTO;
 using WeatherAlmanac.Core.Interfaces;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace WeatherAlmanac.BLL
 {
@@ -15,18 +16,38 @@ namespace WeatherAlmanac.BLL
             _repo = repo;
         }
 
+        public void StatsRange(DateTime start, DateTime end)
+        {
+            Console.Clear();
+            List<DateRecord> records = _repo.GetAll().Data;
+            var rangeList = records.Where(r => r.Date >= start && r.Date <= end).ToList();
+
+            var highMin = records.Min(r => r.HighTemp);
+            var highMax = records.Max(r => r.HighTemp);
+            var highAvg = records.Average(r => r.HighTemp);
+
+            var lowMin = records.Min(r => r.LowTemp);
+            var lowMax = records.Max(r => r.LowTemp);
+            var lowAvg = records.Average(r => r.LowTemp);
+
+            var humMin = records.Min(r => r.Humidity);
+            var humMax = records.Max(r => r.Humidity);
+            var humAvg = records.Average(r => r.Humidity);
+
+            Console.WriteLine("Stats by Date Range");
+            Console.WriteLine($"Start Date: {start:MM/dd/yyyy}");
+            Console.WriteLine($"End Date: {end:MM/dd/yyyy}");
+            Console.WriteLine("");
+            Console.WriteLine($"High (min|max|avg): {highMin}|{highMax}|{(int)highAvg}");
+            Console.WriteLine($"Low (min|max|avg): {lowMin}|{lowMax}|{(int)lowAvg}");
+            Console.WriteLine($"High (min|max|avg): {(int)humMin}|{humMax}|{(int)humAvg}");
+        }
+        
         public Result<List<DateRecord>> LoadRange(DateTime start, DateTime end)
         {
             Result<List<DateRecord>> result = new();
-            List<DateRecord> records = new List<DateRecord>();
-            result.Data = records;
-            foreach(var record in _repo.GetAll().Data)
-            {
-                if(record.Date >= start && record.Date <= end)
-                {
-                    result.Data.Add(record);
-                }
-            }
+            List<DateRecord> records = _repo.GetAll().Data;
+            result.Data = records.Where(r => r.Date >= start && r.Date <= end).ToList();
             
             result.Success = !string.IsNullOrEmpty(result.Data.ToString());
             result.Message = result.Success ? "Range loaded" : "Range not loaded";

@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Ninject" Version="3.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\WeatherAlmanac.BLL\WeatherAlmanac.BLL.csproj" />
     <ProjectReference Include="..\WeatherAlmanac.Core\WeatherAlmanac.Core.csproj" />
   </ItemGroup>

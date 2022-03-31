@@ -21,3 +21,4 @@ C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.UI\
 C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.UI\obj\Debug\net5.0\ref\WeatherAlmanac.UI.dll
 C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.UI\obj\Debug\net5.0\WeatherAlmanac.UI.pdb
 C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.UI\obj\Debug\net5.0\WeatherAlmanac.UI.genruntimeconfig.cache
+C:\Users\MT Hougland\Documents\Genesis10\Week3\WeatherAlmanac\WeatherAlmanac.UI\bin\Debug\net5.0\Ninject.dll

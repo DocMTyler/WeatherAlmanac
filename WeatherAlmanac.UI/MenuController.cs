@@ -2,6 +2,7 @@
 using WeatherAlmanac.Core.Interfaces;
 using WeatherAlmanac.Core.DTO;
 using System.IO;
+using System.Linq;
 
 namespace WeatherAlmanac.UI
 {
@@ -65,6 +66,9 @@ namespace WeatherAlmanac.UI
                         AutoAddRecords();
                         break;
                     case 7:
+                        StatsByRange();
+                        break;
+                    case 8:
                         running = false;
                         break;
                     default:
@@ -99,8 +103,9 @@ namespace WeatherAlmanac.UI
             _ui.Display("4. Edit Record");
             _ui.Display("5. Delete Record");
             _ui.Display("6. Auto Add Records");
-            _ui.Display("7. Quit");
-            _ui.Display("Please enter a selection 1 - 7");
+            _ui.Display("7. Stats by Range");
+            _ui.Display("8. Quit");
+            _ui.Display("Please enter a selection 1 - 8");
         }
 
         public void LoadRecord()
@@ -123,12 +128,24 @@ namespace WeatherAlmanac.UI
             DateTime end = ValiDATE(Console.ReadLine());
 
             var service = Service.LoadRange(start, end);
+            
             foreach(var record in service.Data)
             {
                 _ui.Display(record.ToString());
             }
             
             _ui.Display(service.Message);
+        }
+
+        public void StatsByRange()
+        {
+            
+            _ui.Display("Enter a start date mm/dd/yyy");
+            DateTime start = ValiDATE(Console.ReadLine());
+            _ui.Display("Enter a end date mm/dd/yyy");
+            DateTime end = ValiDATE(Console.ReadLine());
+
+            Service.StatsRange(start, end);
         }
         
         public void AutoAddRecords()

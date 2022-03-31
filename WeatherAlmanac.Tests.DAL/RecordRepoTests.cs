@@ -18,12 +18,7 @@ namespace WeatherAlmanac.Tests.DAL
             // Copy the seed contents to a newly created Test Data File
             File.Copy(SeedFile, TestDataFile);
 
-            _repo = FileRecordRepository(new DateRecord()); //File.Copy(SeedFile, TestDataFile);
-        }
-
-        private FileRecordRepository FileRecordRepository(DateRecord dateRecord)
-        {
-            throw new NotImplementedException();
+            //_repo = new FileRecordRepository("", ); 
         }
 
         private const string SeedFile = "../../../DAL/test_data/test.seed.csv";
